@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181001 06:12:53.596" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Development\robot-scripts\ITProject\Tests\sample.robot" id="s1" name="Sample">
+<test id="s1-t1" name="Search Indian Mart">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.indiamart.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181001 06:12:54.664" level="INFO">Opening browser 'chrome' to base url 'https://www.indiamart.com/'</msg>
+<status status="PASS" endtime="20181001 06:13:14.488" starttime="20181001 06:12:54.663"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Sell On IndiaMART</arg>
+</arguments>
+<status status="PASS" endtime="20181001 06:13:15.800" starttime="20181001 06:13:14.492"></status>
+</kw>
+<kw name="Search" library="MyLibrary">
+<arguments>
+<arg>Shoes</arg>
+</arguments>
+<msg timestamp="20181001 06:13:15.811" level="INFO">Typing text 'Shoes' into text field '//input[@id="search_string"]'</msg>
+<msg timestamp="20181001 06:13:18.907" level="INFO">Clicking element '//input[@id="btnSearch"]'.</msg>
+<status status="PASS" endtime="20181001 06:13:23.031" starttime="20181001 06:13:15.811"></status>
+</kw>
+<status status="PASS" endtime="20181001 06:13:23.031" critical="yes" starttime="20181001 06:12:54.661"></status>
+</test>
+<status status="PASS" endtime="20181001 06:13:23.034" starttime="20181001 06:12:53.685"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Sample" pass="1">Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
